@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<title>📚 【项目名】学习库</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"Microsoft YaHei",sans-serif; background:#0f1220; color:#fff; padding:40px 20px; }
+  h1 { text-align:center; font-size:40px; margin-bottom:8px; }
+  .sub { text-align:center; color:#8b93b5; font-size:16px; margin-bottom:40px; }
+  .grid { max-width:980px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:20px; }
+  .cat { background:#1a1f35; border-radius:20px; padding:24px; }
+  .cat h2 { font-size:22px; margin-bottom:4px; }
+  .cat .icon { font-size:40px; margin-bottom:10px; }
+  .cat .scope { color:#8b93b5; font-size:14px; margin-bottom:14px; line-height:1.5; }
+  .cat a { display:block; color:#69f0ae; font-size:15px; text-decoration:none; padding:6px 0; border-top:1px solid #242b4a; }
+  .cat a:hover { color:#fff; }
+  .empty { color:#3d445f; font-size:14px; padding:6px 0; border-top:1px solid #242b4a; }
+  .foot { text-align:center; color:#3d445f; font-size:13px; margin-top:40px; line-height:1.8; }
+</style>
+</head>
+<body>
+
+<h1>📚 【项目名】学习库</h1>
+<div class="sub">【项目名】模块理解图解 · 文件命名 eli5-主题.html · 新文件放对应目录后回来加链接</div>
+
+<div class="grid">
+
+<!-- 每个分类一张卡：icon + 两位数字前缀标题 + scope 一句话。
+     一级页在卡内加 <a> 行（文案带 emoji + 比喻名 + "（可下钻）"）；
+     还没有页面时保留 .empty 占位。子页不进本索引。 -->
+
+<div class="cat">
+  <div class="icon">🏰</div>
+  <h2>00 整体架构</h2>
+  <div class="scope">全景地图 · 请求旅程 · 模块划分 · 点卡片层层下钻</div>
+  <div class="empty">（待生成）</div>
+</div>
+
+<div class="cat">
+  <div class="icon">🧩</div>
+  <h2>01 【分类名】</h2>
+  <div class="scope">【这个分类覆盖哪些主题，一句话】</div>
+  <div class="empty">（待生成）</div>
+</div>
+
+<div class="cat">
+  <div class="icon">🔩</div>
+  <h2>02 【分类名】</h2>
+  <div class="scope">【这个分类覆盖哪些主题，一句话】</div>
+  <div class="empty">（待生成）</div>
+</div>
+
+</div>
+
+<div class="foot">
+  【库的绝对路径】 · 独立于 git 仓库<br>
+  生成新图解时告诉 Claude："生成 XX 的 eli5，放进学习库并更新目录"
+</div>
+
+</body>
+</html>
